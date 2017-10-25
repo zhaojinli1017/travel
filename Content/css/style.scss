@@ -1,0 +1,238 @@
+@charset "utf-8";
+*{
+    margin: 0;padding: 0;
+    font-family: "微软雅黑";
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+html,body,.box{
+    width: 100%;
+    height: 100%;
+}
+html{
+    font-size: 50px;
+}
+body{
+    font-size: .32rem;
+}
+%qjz{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    background: #EDEDED;
+}
+header{
+    width: 100%;
+    height: 1rem;
+    display: flex;
+    color: #9A9A9A;
+    background: #fff;
+    span{
+        flex: 1;
+        height: 1rem;
+        @extend %qjz;
+        i{
+            font-size: 20px!important;
+            color: #313131;
+        }
+    }
+    .bg{
+        color: #313131;
+        border-bottom: 2px solid #000;
+    }
+}
+section{
+    flex: 1;
+    overflow-y: scroll;
+}
+.slide{
+    width: 100%;
+    height: 100%;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.swiper-pagination-bullet{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    border-radius: 0;
+}
+.ipt{
+    padding-top:10px;
+    padding-bottom: 10px;
+    background: #fff;
+    p{
+        width: 92%;
+        margin-left: 4%;
+        height: .6rem;
+        border-radius: 5px;
+        line-height: .6rem;
+        border: 1px solid #868484;
+        i{
+            padding:0 10px;
+        }
+        input{
+            border: none;
+            outline: 0;
+        }
+    }
+}
+.city{
+    width: 100%;
+    display: flex;
+    background: #fff;
+    @extend %qjz;
+    span{
+        @extend %qjz;
+        flex: 1;
+        margin: 10px 5px;
+        border-radius: 3px;
+        color: #4183FF;
+        padding: 5px;
+        border: 1px solid #337AFF;
+    }
+}
+.title{
+    width: 100%;
+    display: flex;
+    height: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:15px;
+    padding-right:15px;
+    background: #fff;
+    margin-top: 10px;
+    border-bottom: 1px solid #EDEDED;
+    h3{
+        font-weight: normal;
+        font-size: 20px;
+        color: #474747;
+        span{
+            font-size: 10px;
+            color: #4183FF;
+            border: 1px solid #337AFF;
+            margin-left: 10px;
+            padding-left:5px;
+            padding-right:5px;
+            border-radius: 3px;
+        }       
+    }
+    b{
+        font-weight: normal;
+        color: #9D9D9D;
+    } 
+}
+.tit{
+    display: flex;
+    height: 1rem;
+    line-height: 1rem;
+    padding-left: 10px;
+    background: #fff;
+    h4{
+        font-weight: normal;
+    }
+}
+.pic1{
+    width: 100%;
+    height: auto;
+    background: #fff;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.look{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    span{
+        color: #A1A1A1;
+    }
+    b{
+        color: #A1A1A1;
+        font-weight: normal;
+    }
+}
+.list{
+    width: 100%;
+    height: auto;
+    background: #fff;
+    
+    dl{
+        display: flex;
+        padding: 15px;
+        border-bottom: 1px solid #EDEDED;
+        dt{
+            flex: 6;
+            padding-right: 10px;
+            h5{
+                font-weight: normal;
+                font-size: 14px;
+            }
+            p{
+                display: flex;
+                justify-content: space-between;
+                color: #A0A0A0;
+                font-size:10px; 
+                line-height: .6rem;
+                b{
+                    font-weight: normal;
+                }
+            }
+        }
+        dd{
+            flex: 3;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+footer{
+    width: 100%;
+    height: 1rem;
+    display: flex;
+    background: #FBFBFB;
+    .foot{
+        width: 100%;
+        display: flex;
+        height: 1rem;
+        @extend %qjz; 
+        a{
+            @extend %qjz;
+            color: #474747;
+            height: 1rem;
+            flex-direction: column;
+            flex: 1;
+            text-decoration: none;
+            i{
+                font-size: 20px!important;
+            }
+            span{
+                font-size: 10px;
+            }
+            
+        }    
+    }
+    .active{
+        color: #4183FF!important;
+    }
+}

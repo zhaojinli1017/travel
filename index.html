@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" rel="stylesheet" href="Content/icon/iconfont.css">
+    <link type="text/css" rel="stylesheet" href="Content/css/swiper-3.3.1.min.css"> 
+    <link type="text/css" rel="stylesheet" href="Content/css/style.css">
+    <title>Document</title>
+</head>
+<body ng-app="app">
+     <div class="box">
+        <header>
+            <span class="bg">原创</span>
+            <span>优创+</span>
+            <span>视频</span>
+            <span>推荐</span>
+            <span>游记</span>
+            <span><i class="iconfont">&#xe6f9;</i></span>
+            <span><i class="iconfont">&#xe729;</i></span>
+        </header>
+        <section>
+            <div class="box2">
+                <ui-view></ui-view>
+            </div>
+            <div class="box2">aaaaaaaaaaaaaa</div>
+            <div class="box2">bbbbbbbbbbbbbb</div>
+            <div class="box2">cccccccccccccc</div>
+            <div class="box2">dddddddddddddd</div>           
+            <div class="box2">ffffffffffffff</div>
+            <div class="box2">gggggggggggggg</div>
+        </section>
+        
+        <footer>
+           <div class="foot">   
+               <a ui-sref="ly" class="active"><i class="iconfont">&#xe70a;</i><span>推荐</span></a>
+               <a ui-sref="two"><i class="iconfont">&#xe646;</i><span>商城</span></a>
+               <a ui-sref="three"><i class="iconfont">&#xe716;</i><span>社区</span></a>
+               <a ui-sref="four"><i class="iconfont">&#xe662;</i><span>你的</span></a>
+               <a ui-sref="five"><i class="iconfont">&#xe67c;</i><span>我的</span></a>
+           </div>    
+        </footer>
+    </div>
+    <script type="text/javascript" src="Script/js/swiper-3.3.1.min.js"></script>
+    <script type="text/javascript" src="Script/js/jquery-3.2.1.min.js"></script> 
+    <script type="text/javascript" src="Script/js/angular.min.js"></script>
+    <script type="text/javascript" src="Script/js/angular-ui-router.min.js"></script>
+
+    <script type="text/javascript" src="App/app.js"></script>
+    <script type="text/javascript" src="App/Server/lyServer.js"></script> 
+    <script type="text/javascript" src="App/Directive/lyDirective.js"></script>
+    <script type="text/javascript" src="App/Controller/lyController.js"></script>    
+
+</body>
+</html>

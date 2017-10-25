@@ -1,0 +1,60 @@
+            <div class="banner">
+                <div class="swiper-container container">
+                    <div class="swiper-wrapper wrapper">
+                        <div class="swiper-slide slide"><img src="Content/images/banner.jpg" alt=""></div>
+                        <div class="swiper-slide slide"><img src="Content/images/banner.jpg" alt=""></div>
+                        <div class="swiper-slide slide"><img src="Content/images/banner.jpg" alt=""></div>
+                        <div class="swiper-slide slide"><img src="Content/images/banner.jpg" alt=""></div>
+                        <div class="swiper-slide slide"><img src="Content/images/banner.jpg" alt=""></div>
+                        <div class="swiper-slide slide"><img src="Content/images/banner.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="ipt">
+                <p><i class="iconfont">&#xe729;</i><input type="text" placeholder="搜索游记"></p>
+            </div>
+            <div class="city">
+                <span>北京</span><span>西藏</span><span>三亚</span>
+                <span>成都</span><span>更多</span>
+            </div>
+            <div class="conta">
+                <div class="title">
+                    <h3>小编原创<span>罗浩原创</span></h3><b>全部 > </b>
+                </div>
+                <div class="tit">
+                    <h4>独闯美国第二季 美国东海岸游记(下)</h4>
+                </div>
+                <div class="pic1">
+                    <img src="Content/images/img1.jpg" alt="">
+                </div>
+                <div class="look">
+                    <span>387.8万人浏览</span><b>2-16</b>
+                </div>
+            </div>
+            <div class="conta">
+                <div class="title">
+                    <h3>小编推荐</h3><b>全部 > </b>
+                </div>
+                <div class="tit">
+                    <h4>辽宁本溪：南芬大峡谷-吓退司马懿</h4>
+                </div>
+                <div class="pic1">
+                    <img src="Content/images/img2.jpg" alt="">
+                </div>
+                <div class="look">
+                    <span>387.8万人浏览</span><b>2-16</b>
+                </div>
+            </div>
+            <div class="title">
+                <h3>精彩游记</h3><b>全部游记 > </b>
+            </div>
+            <div class="list">
+                <dl ng-repeat="data in datas">
+                    <dt>
+                        <h5>{{data.main}}</h5>
+                        <p><span>{{data.count}}</span><b>{{data.day}}</b></p>
+                    </dt>
+                    <dd><img ng-src={{data.src}}></dd>
+                </dl>     
+            </div>
